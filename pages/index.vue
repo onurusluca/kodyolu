@@ -1,17 +1,25 @@
 <template>
   <div id="main-page">
-    <h1>HELLOO</h1>
-    <nuxt-link to="/kurslar/baslangic/giris/">fasfaf</nuxt-link>
+    <Navbar />
+    <section class="content"></section>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Vue from "vue";
 
+import Navbar from "../components/home/navigation/Navbar";
+import Footer from "../components/home/navigation/Footer";
+
 export default Vue.extend({
-  name: "Main Page",
+  name: "MainPage",
   data() {
     return {};
+  },
+  components: {
+    Navbar,
+    Footer,
   },
   head() {
     // Only for the home page. By using a function you have access to data and computed properties

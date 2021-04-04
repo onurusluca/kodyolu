@@ -5,7 +5,7 @@
   --p-color: #ff5757; //primary
   --s-color: #6a20fdd0; //secondary
   --f-color: #292929; //font
-  --bg-color: #ffffff; //background
+  --bg-color: #e5e6e8; //background
   --h-color: #292922; //heading
   --sh-color: #c6c6c6bf; //shadows
   --footer-color: #ff575756; //footer
@@ -27,5 +27,8 @@
 }
 
 body {
-  background-color: #e5e6e8;
+  background: var(--bg-color);
+  color: var(--f-color);
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }

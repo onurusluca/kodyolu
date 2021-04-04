@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      darkLogo: false,
+      darkLogo: false
     };
   },
 
@@ -10,9 +10,10 @@ export default {
     const toggleSwitch = document.querySelector(
       '.theme-switch input[type="checkbox"]'
     );
+    /* Add to local storage  */
     const currentTheme = localStorage.getItem("theme");
-/*     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
- */
+    /*     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+     */
     if (currentTheme) {
       document.documentElement.setAttribute("data-theme", currentTheme);
 
@@ -41,6 +42,5 @@ export default {
       }
     }
     toggleSwitch.addEventListener("change", switchTheme, false);
-    /* darkmode end */
-  },
+  }
 };
