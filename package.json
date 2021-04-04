@@ -1,0 +1,22 @@
+{
+  "name": "kodyolu-official",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/vercel-builder": "^0.21.2",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3",
+    "vue-click-outside": "^1.1.0"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  }
+}
