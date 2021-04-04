@@ -44,7 +44,7 @@
  */
 
 /* Dark Mode */
-import darkMode from "../../../mixins/darkMode";
+import darkMode from "@/mixins/darkMode.js";
 
 export default {
   name: "Navbar",
