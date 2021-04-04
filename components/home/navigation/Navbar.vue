@@ -1,5 +1,5 @@
 <template>
-  <div
+  <nav
     class="navbar"
     :class="{ 'hidden-navbar': !showOnScroll, 'scroll-nav': scrollNav }"
   >
@@ -36,7 +36,7 @@
         </label>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -44,7 +44,7 @@
  */
 
 /* Dark Mode */
-import darkMode from "@/mixins/darkMode.js";
+import darkMode from "~/mixins/darkMode";
 
 export default {
   name: "Navbar",
