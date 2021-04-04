@@ -1,0 +1,38 @@
+//MAIN CSS
+
+@import "01-utilities/variables";
+
+@import "02-core/normalize";
+@import "02-core/typography";
+
+/* 
+sass/
+|
+|– 01-utilities
+|   |– _variables.scss    // Sass Variables
+|   |– _functions.scss    // Sass Functions
+|   |– _mixins.scss       // Sass Mixins
+|
+|– 02-core
+|   |– _normalize.scss    // Normalize
+|   |– _typography.scss   // Typography rules
+|
+|– 03-components
+|   |– _scrollbars.scss    // Scroll Bars
+|   |– _buttons.scss      // Buttons
+|
+|– 04-layout
+|   |– _navigation.scss   // Navigation
+|   |– _grid.scss         // Grid system
+|   |– _header.scss       // Header
+|   |– _footer.scss       // Footer
+|   |– _sidebar.scss      // Sidebar
+|   |– _forms.scss        // Forms
+|
+|– 05-pages/
+|   |– _home.scss         // Home specific styles
+|   |– _about.scss        // About specific styles
+|   |– _contact.scss      // Contact specific styles
+|
+`– main.scss              // Main Sass file 
+*/

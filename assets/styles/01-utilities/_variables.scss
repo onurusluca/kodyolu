@@ -1,0 +1,31 @@
+//VARIABLES
+
+//Main Colors
+:root {
+  --p-color: #ff5757; //primary
+  --s-color: #6a20fdd0; //secondary
+  --f-color: #292929; //font
+  --bg-color: #ffffff; //background
+  --h-color: #292922; //heading
+  --sh-color: #c6c6c6bf; //shadows
+  --footer-color: #ff575756; //footer
+  --mb-color: #ff5757f3; //mobile menu
+  --lb-color: #f8cece; //menus
+}
+
+//Dark Theme Colors
+[data-theme="dark"] {
+  --p-color: #ff5757;
+  --s-color: #6a20fd9e;
+  --f-color: #eaeaea;
+  --bg-color: #0d1f2e;
+  --h-color: #ffffff;
+  --sh-color: rgba(0, 0, 0, 0.641);
+  --footer-color: #150e0e6a;
+  --mb-color: #333333f3;
+  --lb-color: #333;
+}
+
+body {
+  background-color: #e5e6e8;
+}

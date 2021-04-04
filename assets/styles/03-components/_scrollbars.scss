@@ -1,0 +1,18 @@
+//Scrollbar
+body::-webkit-scrollbar {
+  width: 0.85rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--p-color);
+  width: 1.85rem;
+}
+
+::selection {
+  color: white;
+  background: var(--s-color);
+}
