@@ -106,7 +106,7 @@ export default {
     flex-direction: row;
     .navlink {
       padding: 0 1em;
-      font-weight: 600;
+      font-weight: 700;
       transition: all 100ms;
       font-size: 2.2vh;
       &:hover {
