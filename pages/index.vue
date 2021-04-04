@@ -1,6 +1,7 @@
 <template>
   <div id="main-page">
     <h1>HELLOO</h1>
+    <nuxt-link to="/kurslar/baslangic/giris/">fasfaf</nuxt-link>
   </div>
 </template>
 
@@ -15,7 +16,7 @@ export default Vue.extend({
   head() {
     // Only for the home page. By using a function you have access to data and computed properties
     return {
-      title: "Kodyolu",
+      title: "Kodyolu - Sıfırdan kodlama öğren ve iş bul.",
       meta: [
         {
           hid: "home-description", // To avoid any duplication when used in child components, give a unique identifier with the hid key to the meta description. Vue-meta will know that it has to overwrite the default tag.

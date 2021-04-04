@@ -44,7 +44,7 @@ export default {
   //Loading progress bar: https://nuxtjs.org/docs/2.x/features/loading
   loading: {
     color: "#ff5757",
-    height: "4px",
+    height: "5px",
     throttle: 0
   },
 
