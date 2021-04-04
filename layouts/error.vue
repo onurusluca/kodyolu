@@ -1,11 +1,10 @@
 <template>
   <div id="error">
     <h1>Sitede böyle bir sayfa bulunmuyor.</h1>
-    <nuxt-link to="javascript:history.back()"
-      >Bir önceki sayfaya gidin</nuxt-link
-    >
+    <!-- Goes back to previous page with "./" -->
+    <nuxt-link to="./">Bir önceki sayfaya gidin</nuxt-link>
     <nuxt-link to="/">Anasayfaya gidin</nuxt-link>
-    <nuxt-link to="/kurslar">Kurslar Paneline gidin</nuxt-link>nuxt-link
+    <nuxt-link to="/kurslar">Kurslar Paneline gidin</nuxt-link>
   </div>
 </template>
 
@@ -13,7 +12,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Error-Page",
+  name: "Error Page",
   data() {
     return {};
   },
@@ -47,6 +46,7 @@ export default Vue.extend({
     margin: 1vh 0;
     padding: 1vh;
     transition: 200ms;
+    text-decoration: none;
     &:hover {
       color: white;
       background-color: var(--p-color);
