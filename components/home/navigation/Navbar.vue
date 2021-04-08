@@ -1,4 +1,5 @@
 <template>
+  <!-- Hide on scroll -->
   <nav
     class="navbar"
     :class="{ 'hidden-navbar': !showOnScroll, 'scroll-nav': scrollNav }"
@@ -7,13 +8,14 @@
       <img
         alt="Kodyolu Logo"
         id="logo"
-        src="@/assets/images/logo.png"
+        src="@/assets/images/logos/logo.png"
         v-show="!darkLogo"
       />
+      <!-- Dark mode logo -->
       <img
         alt="Kodyolu Logo"
         id="logo"
-        src="@/assets/images/logo-darkmode.png"
+        src="@/assets/images/logos/logo-darkmode.png"
         v-show="darkLogo"
       />
     </nuxt-link>
@@ -25,7 +27,7 @@
       <li><nuxt-link class="navlink" to="/yardım-et">Yardım Et</nuxt-link></li>
       <!--       <li><nuxt-link class="navlink" to="/about/">Bağış Yap</nuxt-link></li>
  -->
-      <li class="darkmode">
+      <li class="dark-mode">
         <label class="theme-switch" for="checkbox">
           <input
             @change="darkLogo = !darkLogo"
@@ -63,8 +65,8 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 7vh;
-  padding: 1em;
+  height: 5vh;
+  padding: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -80,7 +82,8 @@ export default {
     height: auto;
     transition: all 300ms;
     cursor: pointer;
-    filter: drop-shadow(5px 5px 3px var(--sh-color)) contrast(1.25);
+    /*     filter: drop-shadow(5px 5px 3px var(--sh-color)) contrast(1.25);
+ */
     &:hover {
       transform: scale(1.03);
     }
@@ -94,21 +97,24 @@ export default {
   &.scroll-nav {
     background-color: var(--bg-color);
     box-shadow: 0 2px 10px var(--sh-color);
-    height: 7vh;
+    padding: 3vh;
     #logo {
       width: 15vh;
-      padding-top: 0;
     }
   }
 
+  //Navbar links
   .nav-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     .navlink {
-      padding: 0 1em;
-      font-weight: 700;
+      padding: 0 2vh;
+      font-weight: bolder;
       transition: all 100ms;
       font-size: 2.2vh;
+      color: var(--h-color);
       &:hover {
         color: var(--p-color);
       }
@@ -117,8 +123,9 @@ export default {
 }
 
 //Dark mode CSS
-.darkmode {
+.dark-mode {
   margin-left: 2vh;
+  margin-bottom: 0.6vh;
   #theme-toggle {
     display: none;
     cursor: pointer;
@@ -196,12 +203,8 @@ export default {
   .navbar {
     display: flex;
     justify-content: space-between;
-    #logo {
-      padding-top: -1vh;
-    }
-    .darkmode {
-      margin-top: 2vh !important;
-      margin-right: 11vh !important;
+
+    .dark-mode {
       z-index: 555;
     }
   }

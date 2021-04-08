@@ -1,10 +1,24 @@
 //TYPOGRAPHY
-$p-font: "Poppins", sans-serif;
 
-/* $s-font: "Jost", sans-serif;
- */
-body {
+$p-font: "Josefin Sans", sans-serif;
+
+$s-font: "Poppins", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
   font-family: $p-font;
+}
+
+p,
+button,
+a {
+  font-family: $s-font;
 }
 
 @font-face {
@@ -26,5 +40,25 @@ body {
   src: url("~assets/fonts/Poppins-700.woff2") format("woff2"),
     /* Modern Browsers */ url("~assets/fonts/Poppins-700.woff") format("woff"),
     /* Modern Browsers */ url("~assets/fonts/Poppins-700.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("~assets/fonts/JosefinSans-Regular.woff") format("woff"),
+    /* Modern Browsers */ url("~assets/fonts/JosefinSans-Medium.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("~assets/fonts/JosefinSans-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("~assets/fonts/JosefinSans-Bold.ttf")
       format("truetype"); /* Safari, Android, iOS */
 }
